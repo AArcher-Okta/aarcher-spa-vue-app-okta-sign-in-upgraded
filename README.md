@@ -1,1 +1,1 @@
-# This repo is intentionally excluding index.js within the okta directory to hide the client ID
+# This repo is intentionally excluding the okta directory which contains detials about the client_id and issuer
