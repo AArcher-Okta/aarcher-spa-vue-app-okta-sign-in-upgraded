@@ -1,6 +1,6 @@
 <template>
   <div id="home">
-    <h1>Custom Login Page with Sign In Widget</h1>
+    <h1>Customer-hosted Okta Sign In Widget Portal</h1>
     <div v-if="!this.$root.authenticated">
       <p>Hello, Vue.</p>
       <router-link role="button" to="/login">
