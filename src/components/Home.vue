@@ -2,7 +2,6 @@
   <div id="home">
     <h1>Customer-hosted Embedded Okta Sign In Widget</h1>
     <div v-if="!this.$root.authenticated">
-      <p>Hello, Vue.</p>
       <router-link role="button" to="/login">
         Login
       </router-link>
