@@ -7,6 +7,19 @@ a:hover {
   text-decoration: none;
 }
 
+th {
+  padding-left: 4em;
+}
+
+td {
+  border: 1px solid #4fc08d;
+  max-width: 500px;
+}
+
+.table {
+  display: inline-flex;
+  flex-direction: column;
+}
 
 /* nav div a { margin-right: 10px }
 #app { background: rgba(98, 228, 185, 0.192) } */
@@ -91,6 +104,7 @@ button {
   border-radius: 5px;
   border: 0.1em solid #000;
   cursor: pointer;
+  display: inline-flex;
 }
 
 button:hover {
@@ -147,4 +161,8 @@ h3, h2 {
 
 .error {
   color: #f7b80c;
+}
+
+#okta-sign-in, .auth-content, .okta-sign-in-header{
+  border-radius: 2%;
 }

@@ -6,7 +6,7 @@
       My User Profile (ID Token Claims)
     </h1>
     <p>
-      This route is protected with the <code>onAuthRequired</code>, navigation guard which will ensure that this page cannot be accessed until you have authenticated.
+      This route is protected with the [onAuthRequired] navigation guard which will ensure that this page cannot be accessed until you have authenticated.
     </p>
     <table class="ui table">
       <thead>
