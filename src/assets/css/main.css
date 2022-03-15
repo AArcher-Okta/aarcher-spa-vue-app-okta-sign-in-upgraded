@@ -173,9 +173,24 @@ blockquote, #okta-sign-in body, #okta-sign-in caption, #okta-sign-in center,
 #okta-sign-in small, #okta-sign-in span, #okta-sign-in strike, #okta-sign-in strong, #okta-sign-in sub, #okta-sign-in sup, 
 #okta-sign-in table, #okta-sign-in tbody, #okta-sign-in td, #okta-sign-in tfoot, #okta-sign-in th, #okta-sign-in thead, 
 #okta-sign-in tr, #okta-sign-in tt, #okta-sign-in u, #okta-sign-in ul, #okta-sign-in var {
-  font-family:Arial, Helvetica, sans-serif
+  font-family:Arial, Helvetica, sans-serif;
 }
 
-.infobox {
-  color: #2c3e50;
+#okta-sign-in.auth-container .button-primary {
+  background: linear-gradient(#4fc08d, #149158);
+  font-family: Arial, Helvetica, sans-serif;
+}
+#okta-sign-in.auth-container .button-primary:hover {
+  background: linear-gradient(#878d8a, #1d2935);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#okta-sign-in.auth-container input[type=button], #okta-sign-in.auth-container input[type=submit] {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#okta-sign-in .o-form .input-fix input[type=number], #okta-sign-in .o-form .input-fix input[type=password], 
+okta-sign-in .o-form .input-fix input[type=tel], #okta-sign-in .o-form .input-fix input[type=text], 
+#okta-sign-in .o-form .input-fix input[type=textbox] {
+  font-family: Arial, Helvetica, sans-serif;
 }
