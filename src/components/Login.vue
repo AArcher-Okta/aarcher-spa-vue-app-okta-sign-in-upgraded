@@ -21,7 +21,7 @@ export default {
         logo: require('@/assets/logo.png'),
         i18n: {
           en: {
-            'primaryauth.title': 'Sign in to my Okta Sign-In Widget Vue.js app'
+            'primaryauth.title': 'Sign in'
           }
         },
         authParams: {

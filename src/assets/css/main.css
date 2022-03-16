@@ -174,14 +174,21 @@ blockquote, #okta-sign-in body, #okta-sign-in caption, #okta-sign-in center,
 #okta-sign-in table, #okta-sign-in tbody, #okta-sign-in td, #okta-sign-in tfoot, #okta-sign-in th, #okta-sign-in thead, 
 #okta-sign-in tr, #okta-sign-in tt, #okta-sign-in u, #okta-sign-in ul, #okta-sign-in var {
   font-family:Arial, Helvetica, sans-serif;
+  background-color: none;
 }
 
 #okta-sign-in.auth-container .button-primary {
   background: linear-gradient(#4fc08d, #149158);
   font-family: Arial, Helvetica, sans-serif;
 }
+
 #okta-sign-in.auth-container .button-primary:hover {
   background: linear-gradient(#878d8a, #1d2935);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#okta-sign-in.auth-container .button-primary:focus {
+  background: linear-gradient(#4fc08d, #149158);
   font-family: Arial, Helvetica, sans-serif;
 }
 
