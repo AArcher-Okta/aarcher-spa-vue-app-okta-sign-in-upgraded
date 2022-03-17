@@ -1,14 +1,15 @@
 <template>
   <div id="home">
-    <h1>Customer-hosted Embedded Okta Sign In Widget</h1>
-    <div v-if="!this.$root.authenticated">
+    <h1>Customer-hosted Okta Sign In Widget Portal</h1>
+    <div v-if="authState && !authState.isAuthenticated">
+      <span class="hello">Hello, you are not </span>
       <router-link role="button" to="/login">
-        Login
+        signed in.
       </router-link>
     </div>
 
-    <div v-if="this.$root.authenticated">
-      <p>Welcome back, {{claims.name}}!</p>
+    <div v-if="authState && authState.isAuthenticated">
+      <p>Welcome back{{claims.name}}!</p>
       <p>
         You have successfully authenticated with Okta!
         Visit the <a href="/profile">My Profile</a> page to take a look inside the ID token.
@@ -34,3 +35,19 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+ p {
+   color: #4fc08d;
+ }
+ span {
+   color: #4fc08d; 
+ }
+ a {
+   color: #fff;
+   text-decoration: none;
+ }
+ a:hover {
+   color: #4fc08d; 
+ }
+</style>

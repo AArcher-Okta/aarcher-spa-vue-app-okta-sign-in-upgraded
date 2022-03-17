@@ -1,4 +1,3 @@
-
 import { createRouter, createWebHistory } from 'vue-router'
 import { LoginCallback } from '@okta/okta-vue'
 import { navigationGuard } from '@okta/okta-vue'

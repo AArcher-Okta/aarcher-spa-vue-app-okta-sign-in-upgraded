@@ -4,6 +4,7 @@ html, body {
   height: 100%;
   margin: 0;
   text-align: center;
+  color:#4fc08d;
 }
 
 a {
@@ -24,10 +25,10 @@ td {
   max-width: 500px;
 }
 
-/* button {
+button {
   background-color: #4fc08d;
   border: none;
-  color: #fff;
+  color: #000;
   opacity: 0.7;
   margin-top: 0.5em;
   text-decoration: none;
@@ -37,12 +38,13 @@ td {
   border: 0.1em solid #000;
   cursor: pointer;
   display: inline-flex;
-} */
+}
 
 button:hover {
-  color: #000000;
+  color: #fff;
   cursor: pointer;
   opacity: 1;
+  border: 0.1em solid #fff;
 }
 
 .profile {
@@ -219,4 +221,8 @@ okta-sign-in .o-form .input-fix input[type=tel], #okta-sign-in .o-form .input-fi
 #okta-sign-in .o-form .o-form-input .o-form-control:hover {
   border-radius: 16px;
   border-color: #4fc08d;
+}
+
+#okta-sign-in .auth-header {
+  border: none;
 }
