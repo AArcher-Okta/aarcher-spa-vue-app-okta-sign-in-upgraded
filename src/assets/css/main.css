@@ -207,3 +207,7 @@ okta-sign-in .o-form .input-fix input[type=tel], #okta-sign-in .o-form .input-fi
 #okta-sign-in .auth-header {
   border: none;
 }
+
+#okta-sign-in label {
+  display: block;  
+}
