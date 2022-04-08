@@ -141,8 +141,12 @@ blockquote, #okta-sign-in body, #okta-sign-in caption, #okta-sign-in center,
   box-shadow: none;
 }
 
-#okta-sign-in .sign-in-with-idp .okta-idps-container .social-auth-button.link-button:last-of-type {
+/* #okta-sign-in .sign-in-with-idp .okta-idps-container .social-auth-button.link-button:last-of-type {
   border-radius: 16px;
+} */
+
+#okta-sign-in .social-auth-button.link-button {
+  border-radius: 16px; 
 }
 
 #okta-sign-in.auth-container input[type=button], #okta-sign-in.auth-container input[type=submit] {

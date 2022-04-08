@@ -24,6 +24,12 @@ export default {
             'primaryauth.title': 'Sign in'
           }
         },
+        language: 'en', // Try: [fr, de, es, ja, zh-CN
+        idpDisplay: "SECONDARY",                        // Try: [PRIMARY, SECONDARY] Changes button display order
+        // idps: [
+        //   {type: 'GOOGLE', id: '0oahsfreqPPz7V4Ax696'},
+        //   {type: 'DISCORD', id: '0oar2xyaakI9c7vRp696'}
+        // ],
         authParams: {
           issuer,
           scopes,
