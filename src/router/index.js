@@ -1,4 +1,4 @@
-// import { isInGroup } from '@/user'
+import { isInGroup } from '@/user'
 import { createRouter, createWebHistory} from 'vue-router'
 import { LoginCallback } from '@okta/okta-vue'
 import { navigationGuard } from '@okta/okta-vue'
@@ -6,8 +6,7 @@ import Home from '@/components/Home.vue'
 import LoginComponent from '@/components/Login.vue'
 import ProfileComponent from '@/components/Profile.vue'
 import About from '@/components/About.vue'
-// import Edit from '@/components/Edit.vue'
-
+import Admin from '@/components/Admin.vue'
 
 
 const routes = [
@@ -37,26 +36,21 @@ const routes = [
       requiresAuth: true
     }
   }
-  // ,
-  // {
-  //   path: '/edit',
-  //   name: 'Edit',
-  //   component: Edit,
-  //   meta: {
-  //     requiresAuth: true
-  //   }
-  //   ,
-  //   beforeEnter: async (to, from, next) => {
-  //     next(await isInGroup('editor'));
-  //   }
-  // }
-  // ,
-  // {
-  //   path: '/:catchAll(.*)',
-  //   beforeEnter: (to, from, next) => {
-  //     next('/');
-  //   }
-  // }
+  ,
+  {
+    path: '/admin',
+    name: 'Admin',
+    component: Admin,
+    meta: {
+      requiresAuth: true
+    }
+    //evaluate group for RBAC
+    ,
+    beforeEnter: async (to, from, next) => {
+      next(await isInGroup('admin'));
+    }
+    
+  }
 ]
 
 const router = createRouter({
