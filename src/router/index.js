@@ -1,13 +1,12 @@
-import { isInGroup } from '@/user'
+import { isInGroup } from '@/user.js'
 import { createRouter, createWebHistory} from 'vue-router'
-import { LoginCallback } from '@okta/okta-vue'
+import { LoginCallback, getUser } from '@okta/okta-vue'
 import { navigationGuard } from '@okta/okta-vue'
 import Home from '@/components/Home.vue'
 import LoginComponent from '@/components/Login.vue'
 import ProfileComponent from '@/components/Profile.vue'
 import About from '@/components/About.vue'
 import Admin from '@/components/Admin.vue'
-
 
 const routes = [
   {
@@ -40,16 +39,15 @@ const routes = [
   {
     path: '/admin',
     name: 'Admin',
-    component: Admin,
+    component: Admin, getUser,
     meta: {
       requiresAuth: true
     }
     //evaluate group for RBAC
     ,
     beforeEnter: async (to, from, next) => {
-      next(await isInGroup('admin'));
+      next(await isInGroup('admin'))
     }
-    
   }
 ]
 

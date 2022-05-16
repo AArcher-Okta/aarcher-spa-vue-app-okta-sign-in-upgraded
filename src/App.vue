@@ -12,6 +12,7 @@
   <router-view />
 </template>
 
+
 <script>
 export default {
   name: 'app',
@@ -19,6 +20,10 @@ export default {
     async logout () {
       await this.$auth.signOut()
     }
+    // ,
+    // async getUser () {
+    //   await this.$auth.getUser()
+    // }
   }
 }
 

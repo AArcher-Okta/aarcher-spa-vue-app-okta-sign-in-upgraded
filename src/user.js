@@ -1,6 +1,7 @@
-import Vue from 'vue'
+import app from './App.vue'
 
 export async function isInGroup(group) {
-  const user = await Vue.prototype.$auth.getUser();
+  
+  const user = await app.provide.$auth.getUser();
   return !!user && user.groups.includes(group);
 }
