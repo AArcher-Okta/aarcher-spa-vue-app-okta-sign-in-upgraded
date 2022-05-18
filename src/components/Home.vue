@@ -25,13 +25,6 @@ export default {
     return {
       claims: ''
     }
-  },
-  created () { this.setup() },
-  methods: {
-    async setup () {
-      if (this.$root.authenticated)
-        this.claims = await this.$auth.getUser()
-    }
   }
 }
 </script>
